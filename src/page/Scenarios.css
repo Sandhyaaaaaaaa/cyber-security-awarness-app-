@@ -1,0 +1,62 @@
+.scenarios-container {
+  padding: 50px 20px;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f6f9fc, #e0f7fa);
+  font-family: Arial, sans-serif;
+}
+
+.scenarios-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.scenarios-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scenario-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.scenario-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.scenario-card h3 {
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.scenario-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.scenario-solution {
+  margin-top: 15px;
+  padding: 10px;
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  color: #2e7d32;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}

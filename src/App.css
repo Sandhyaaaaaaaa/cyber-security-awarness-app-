@@ -1,0 +1,192 @@
+/* Full page with background image */
+.full-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("D:\bms\cybersecurity,concept,hacker,hood,laptop,text,dark….jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Header styling */
+.header {
+  position: relative;
+  padding: 20px 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App name + description container */
+.header-content {
+  flex: 1;
+}
+
+/* Buttons on top right */
+.header-buttons {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.header-buttons button {
+  background-color: transparent;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.header-buttons button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Centering login container */
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Login box styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 320px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.login-box button:hover {
+  background-color: #3a9d3a;
+}
+
+.register-link {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #4CAF50;
+  cursor: pointer;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modal input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.modal button {
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.modal button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.modal button[type="submit"]:hover {
+  background-color: #3a9d3a;
+}
+
+.close-btn {
+  background-color: #ddd;
+  color: #555;
+}
+
+.close-btn:hover {
+  background-color: #bbb;
+}

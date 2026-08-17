@@ -1,0 +1,44 @@
+.videos-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.videos-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.videos-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.video-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.video-card p {
+  font-size: 0.9rem;
+  color: #555;
+}

@@ -1,0 +1,57 @@
+.dashboard-container {
+  background: linear-gradient(to right, #fffde7, #f0f4c3);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #33691e;
+  margin-bottom: 40px;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.grid-item h2 {
+  color: #558b2f;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  color: #555;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #689f38;
+}
